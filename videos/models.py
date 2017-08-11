@@ -5,6 +5,7 @@ from django.db import models
 class Video(models.Model):
     title       = models.CharField(max_length=120)
     embed_code  = models.TextField()
+    updated     = models.DateTimeField(auto_now=True)
     timestamp   = models.DateTimeField(auto_now_add=True)
 
 
